@@ -5,7 +5,7 @@ defmodule S2PdfMaker.Mixfile do
     [
       app: :s2_pdf_maker,
       name: "S2PdfMaker",
-      version: "0.1.0",
+      version: "0.1.01",
       source_url: "https://github.com/JPSightSource/S2PdfMaker.git",
       elixir: "~> 1.18",
       deps: deps(),
