@@ -1,4 +1,4 @@
-defmodule Gutenex.PDF.Graphics do
+defmodule S2PdfMaker.PDF.Graphics do
   def paint(aliaz) do
     "/#{aliaz} Do\n"
   end

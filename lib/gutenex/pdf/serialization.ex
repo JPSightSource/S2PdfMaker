@@ -1,10 +1,10 @@
-defmodule Gutenex.PDF.Serialization do
+defmodule S2PdfMaker.PDF.Serialization do
   @moduledoc """
   Need to serialize elixir into PDF format? You came to the right place!
 
   ```
     defmodule Walrus do
-      import Gutenex.PDF.Serialization
+      import S2PdfMaker.PDF.Serialization
 
       def to_pdf(attributes) do
         serialize({:dict, Dict.to_list(attributes)})

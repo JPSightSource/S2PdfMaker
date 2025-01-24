@@ -1,6 +1,6 @@
-defmodule Gutenex.PDF.Builders.FontBuilder do
-  alias Gutenex.PDF.Context
-  alias Gutenex.PDF.RenderContext
+defmodule S2PdfMaker.PDF.Builders.FontBuilder do
+  alias S2PdfMaker.PDF.Context
+  alias S2PdfMaker.PDF.RenderContext
 
   # Builds each font object, adding the font objects and references to the
   # render context. Returns {render_context, context}

@@ -1,6 +1,6 @@
-defmodule Gutenex.PDF.Exporter do
-  alias Gutenex.PDF.RenderContext
-  alias Gutenex.PDF.Serialization
+defmodule S2PdfMaker.PDF.Exporter do
+  alias S2PdfMaker.PDF.RenderContext
+  alias S2PdfMaker.PDF.Serialization
   # Declare the PDF version
   @start_mark """
   %PDF-1.7

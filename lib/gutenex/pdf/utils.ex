@@ -1,4 +1,4 @@
-defmodule Gutenex.PDF.Utils do
+defmodule S2PdfMaker.PDF.Utils do
   # Base case, escaping the empty string is the empty string
   def escape(<<>>) do
     <<>>

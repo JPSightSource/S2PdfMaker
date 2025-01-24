@@ -1,11 +1,11 @@
-defmodule Gutenex.PDF.Builder do
-  alias Gutenex.PDF.Context
-  alias Gutenex.PDF.Builders.ImageBuilder
-  alias Gutenex.PDF.Builders.FontBuilder
-  alias Gutenex.PDF.Builders.PageBuilder
-  alias Gutenex.PDF.Builders.PageTreeBuilder
-  alias Gutenex.PDF.Builders.CatalogBuilder
-  alias Gutenex.PDF.Builders.MetaDataBuilder
+defmodule S2PdfMaker.PDF.Builder do
+  alias S2PdfMaker.PDF.Context
+  alias S2PdfMaker.PDF.Builders.ImageBuilder
+  alias S2PdfMaker.PDF.Builders.FontBuilder
+  alias S2PdfMaker.PDF.Builders.PageBuilder
+  alias S2PdfMaker.PDF.Builders.PageTreeBuilder
+  alias S2PdfMaker.PDF.Builders.CatalogBuilder
+  alias S2PdfMaker.PDF.Builders.MetaDataBuilder
 
   # The way I'm building this looks suspiciously like a GenServer...
   @doc """
@@ -13,7 +13,7 @@ defmodule Gutenex.PDF.Builder do
   """
   def build(%Context{} = context) do
     {_render_context, ^context} =
-      {%Gutenex.PDF.RenderContext{}, context}
+      {%S2PdfMaker.PDF.RenderContext{}, context}
       |> ImageBuilder.build()
       |> FontBuilder.build()
       |> PageTreeBuilder.build()

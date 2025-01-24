@@ -1,4 +1,4 @@
-defmodule Gutenex.PDF.Templates do
+defmodule S2PdfMaker.PDF.Templates do
   def load(path) do
     {
       template_alias(path),

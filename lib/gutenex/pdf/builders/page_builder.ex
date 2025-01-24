@@ -1,6 +1,6 @@
-defmodule Gutenex.PDF.Builders.PageBuilder do
-  alias Gutenex.PDF.Context
-  alias Gutenex.PDF.RenderContext
+defmodule S2PdfMaker.PDF.Builders.PageBuilder do
+  alias S2PdfMaker.PDF.Context
+  alias S2PdfMaker.PDF.RenderContext
 
   @doc """
     Pages are built into two objects

@@ -1,6 +1,6 @@
-defmodule Gutenex.PDF.Builders.CatalogBuilder do
-  alias Gutenex.PDF.RenderContext
-  alias Gutenex.PDF.Context
+defmodule S2PdfMaker.PDF.Builders.CatalogBuilder do
+  alias S2PdfMaker.PDF.RenderContext
+  alias S2PdfMaker.PDF.Context
 
   def build({%RenderContext{} = render_context, %Context{} = context}) do
     render_context =

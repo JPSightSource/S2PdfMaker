@@ -1,4 +1,4 @@
-defmodule Gutenex.PDF.Page.PageSizes do
+defmodule S2PdfMaker.PDF.Page.PageSizes do
   @moduledoc """
   Functions to set common page sizes by atom.
   """

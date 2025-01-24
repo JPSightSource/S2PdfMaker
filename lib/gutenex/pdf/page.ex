@@ -1,5 +1,5 @@
-defmodule Gutenex.PDF.Page do
-  use Gutenex.PDF.Page.PageSizes
+defmodule S2PdfMaker.PDF.Page do
+  use S2PdfMaker.PDF.Page.PageSizes
 
   def to_pdf(parent_reference, contents_reference, generation_number, options \\ %{}) do
     {

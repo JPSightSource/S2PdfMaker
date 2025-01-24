@@ -1,6 +1,6 @@
-defmodule Gutenex.PDF.Builders.PageTreeBuilder do
-  alias Gutenex.PDF.Context
-  alias Gutenex.PDF.RenderContext
+defmodule S2PdfMaker.PDF.Builders.PageTreeBuilder do
+  alias S2PdfMaker.PDF.Context
+  alias S2PdfMaker.PDF.RenderContext
 
   def build({%RenderContext{} = render_context, %Context{} = context}) do
     updated_render_context =

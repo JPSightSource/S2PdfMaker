@@ -1,5 +1,5 @@
-defmodule Gutenex.PDF.Images do
-  alias Gutenex.PDF.Graphics
+defmodule S2PdfMaker.PDF.Images do
+  alias S2PdfMaker.PDF.Graphics
   alias Imagineer.Image.PNG
 
   def set_image(image_alias, %PNG{} = image, options \\ %{}) do

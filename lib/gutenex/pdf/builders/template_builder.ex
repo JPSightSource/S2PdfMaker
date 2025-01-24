@@ -1,6 +1,6 @@
-defmodule Gutenex.PDF.Builders.TemplateBuilder do
-  alias Gutenex.PDF.Context
-  alias Gutenex.PDF.RenderContext
+defmodule S2PdfMaker.PDF.Builders.TemplateBuilder do
+  alias S2PdfMaker.PDF.Context
+  alias S2PdfMaker.PDF.RenderContext
 
   @doc """
   If template(s) were used, build references to them and adds the references

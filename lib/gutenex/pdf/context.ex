@@ -1,18 +1,18 @@
-defmodule Gutenex.PDF.Context do
-  alias Gutenex.PDF.Page
+defmodule S2PdfMaker.PDF.Context do
+  alias S2PdfMaker.PDF.Page
 
   defstruct(
     meta_data: %{
       creator: "Elixir",
       creation_date: :calendar.local_time(),
-      producer: "Gutenex",
+      producer: "S2PdfMaker",
       author: "",
       title: "",
       subject: "",
       keywords: ""
     },
     images: %{},
-    fonts: Gutenex.PDF.Font.standard_fonts(),
+    fonts: S2PdfMaker.PDF.Font.standard_fonts(),
     templates: [nil],
     template_aliases: %{},
     pages: [],

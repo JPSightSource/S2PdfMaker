@@ -1,5 +1,0 @@
-language: elixir
-otp_release:
-  - 17.0
-env:
-  - MIX_ENV=test

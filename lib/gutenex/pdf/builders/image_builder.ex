@@ -1,7 +1,7 @@
-defmodule Gutenex.PDF.Builders.ImageBuilder do
-  alias Gutenex.PDF.Context
-  alias Gutenex.PDF.RenderContext
-  alias Gutenex.PDF.Images
+defmodule S2PdfMaker.PDF.Builders.ImageBuilder do
+  alias S2PdfMaker.PDF.Context
+  alias S2PdfMaker.PDF.RenderContext
+  alias S2PdfMaker.PDF.Images
 
   def build({%RenderContext{} = render_context, %Context{} = context}) do
     render_context = add_images(render_context, Map.to_list(context.images))

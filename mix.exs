@@ -1,13 +1,13 @@
-defmodule Gutenex.Mixfile do
+defmodule S2PdfMaker.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :gutenex,
-      name: "Gutenex",
-      version: "0.2.0",
-      source_url: "https://github.com/SenecaSystems/gutenex",
-      elixir: "~> 1.0",
+      app: :s2_pdf_maker,
+      name: "S2PdfMaker",
+      version: "0.1.0",
+      source_url: "https://github.com/JPSightSource/S2PdfMaker.git",
+      elixir: "~> 1.18",
       deps: deps(),
       description: description(),
       package: package()
@@ -35,8 +35,7 @@ defmodule Gutenex.Mixfile do
   defp package do
     [
       licenses: ["MIT"],
-      links: %{github: "https://github.com/SenecaSystems/gutenex"},
-      contributors: ["Chris Maddox"]
-    ]
+      links: %{github: "https://github.com/JPSightSource/S2PdfMaker.git"},
+      contributors: ["Chris Maddox",  "James Parker"]    ]
   end
 end

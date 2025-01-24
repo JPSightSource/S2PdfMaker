@@ -1,9 +1,9 @@
-defmodule Gutenex do
+defmodule S2PdfMaker do
   use GenServer
-  alias Gutenex.PDF
-  alias Gutenex.PDF.Text
-  alias Gutenex.PDF.Font
-  alias Gutenex.PDF.Geometry
+  alias S2PdfMaker.PDF
+  alias S2PdfMaker.PDF.Text
+  alias S2PdfMaker.PDF.Font
+  alias S2PdfMaker.PDF.Geometry
 
   #######################
   ##       Setup       ##
@@ -20,7 +20,7 @@ defmodule Gutenex do
   Returns the default context and stream (empty binary)
   """
   def init(:ok) do
-    {:ok, [%Gutenex.PDF.Context{}, <<>>]}
+    {:ok, [%S2PdfMaker.PDF.Context{}, <<>>]}
   end
 
   #######################
@@ -330,12 +330,12 @@ defmodule Gutenex do
 
   def handle_cast({:templates, :add, {template_alias, template_contents}}, [context, stream]) do
     template_aliases = Map.put(context.template_aliases, template_alias, template_contents)
-    {:noreply, [%Gutenex.PDF.Context{template_aliases: template_aliases}, stream]}
+    {:noreply, [%S2PdfMaker.PDF.Context{template_aliases: template_aliases}, stream]}
   end
 
   def handle_cast({:template, :set, {template_alias}}, [context, stream]) do
     templates = List.replace_at(context.templates, context.current_page - 1, template_alias)
-    {:noreply, [%Gutenex.PDF.Context{context | templates: templates}, stream]}
+    {:noreply, [%S2PdfMaker.PDF.Context{context | templates: templates}, stream]}
   end
 
   #####################################
@@ -344,12 +344,12 @@ defmodule Gutenex do
 
   def handle_cast({:image, :add, {image_alias, image}}, [context, stream]) do
     images = Map.put(context.images, image_alias, image)
-    {:noreply, [%Gutenex.PDF.Context{context | images: images}, stream]}
+    {:noreply, [%S2PdfMaker.PDF.Context{context | images: images}, stream]}
   end
 
   def handle_cast({:image, :write, {image_alias, options}}, [context, stream]) do
     image = Map.get(context.images, image_alias)
-    stream = stream <> Gutenex.PDF.Images.set_image(image_alias, image, options)
+    stream = stream <> S2PdfMaker.PDF.Images.set_image(image_alias, image, options)
     {:noreply, [context, stream]}
   end
 

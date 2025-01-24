@@ -1,4 +1,4 @@
-defmodule Gutenex.PDF.RenderContext do
+defmodule S2PdfMaker.PDF.RenderContext do
   defstruct(
     generation_number: 0,
     current_index: 1,

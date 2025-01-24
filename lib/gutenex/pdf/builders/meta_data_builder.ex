@@ -1,6 +1,6 @@
-defmodule Gutenex.PDF.Builders.MetaDataBuilder do
-  alias Gutenex.PDF.Context
-  alias Gutenex.PDF.RenderContext
+defmodule S2PdfMaker.PDF.Builders.MetaDataBuilder do
+  alias S2PdfMaker.PDF.Context
+  alias S2PdfMaker.PDF.RenderContext
 
   @doc """
   Given a PDF Context and index, generate the metadata information dictionary

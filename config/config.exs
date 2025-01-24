@@ -1,3 +1,3 @@
 use Mix.Config
 
-config :gutenex, ignore_module_conflict: true
+config :s2_pdf_maker, ignore_module_conflict: true

@@ -1,4 +1,4 @@
-defmodule Gutenex.PDF.Font do
+defmodule S2PdfMaker.PDF.Font do
   # Helpful PDF on fonts in PDFs: http://www.ntg.nl/eurotex/KacvinskyPDF.pdf
 
   @default_font_size 12
